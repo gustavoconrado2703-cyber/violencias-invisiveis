@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violências Invisíveis</title>
+  <meta name="description" content="Projeto educativo sobre violências que nem sempre deixam marcas visíveis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#inicio">VI<span>.</span></a>
+    <nav>
+      <a href="#experiencia">Experiência</a>
+      <a href="#tipos">Tipos</a>
+      <a href="#frases">Frases</a>
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="#ajuda">Ajuda</a>
+    </nav>
+    <button class="menu" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PROJETO DE CONSCIENTIZAÇÃO</p>
+        <h1>Nem toda violência deixa marcas <em>visíveis.</em></h1>
+        <p class="lead">Algumas aparecem em palavras, comportamentos, controles e silêncios. Você saberia reconhecê-las?</p>
+        <div class="actions">
+          <a class="btn primary" href="#experiencia">Começar experiência</a>
+          <a class="btn secondary" href="#tipos">Conhecer o tema</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="quote-mark">“</div>
+        <p>O que parece pequeno para quem observa pode ser enorme para quem vive.</p>
+        <span>Violências Invisíveis</span>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section experience">
+      <div class="section-head">
+        <p class="eyebrow">01 · TESTE RÁPIDO</p>
+        <h2>Você reconheceria?</h2>
+        <p>Leia cada situação e escolha a alternativa que melhor representa o comportamento.</p>
+      </div>
+
+      <div class="quiz-card">
+        <div class="progress"><span id="progressBar"></span></div>
+        <p id="questionCount" class="small"></p>
+        <h3 id="question"></h3>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="nextBtn" class="btn primary hidden">Próxima situação</button>
+      </div>
+      <div id="quizResult" class="result hidden"></div>
+    </section>
+
+    <section id="tipos" class="section">
+      <div class="section-head">
+        <p class="eyebrow">02 · ENTENDA</p>
+        <h2>Nem sempre é fácil dar nome ao que acontece.</h2>
+        <p>Violências podem assumir diferentes formas e se sobrepor. O contexto, a frequência e os efeitos importam.</p>
+      </div>
+      <div class="cards">
+        <article class="info-card"><span>01</span><h3>Psicológica</h3><p>Comportamentos que provocam medo, humilhação, desvalorização, isolamento, manipulação ou controle.</p></article>
+        <article class="info-card"><span>02</span><h3>Moral</h3><p>Condutas que atingem a honra ou a reputação, como humilhações, difamações e acusações.</p></article>
+        <article class="info-card"><span>03</span><h3>Patrimonial</h3><p>Controle, retenção, destruição ou apropriação de bens, documentos, dinheiro ou recursos.</p></article>
+        <article class="info-card"><span>04</span><h3>Digital</h3><p>Perseguição, exposição, invasão de privacidade, ameaças e controle por meios digitais.</p></article>
+        <article class="info-card"><span>05</span><h3>Assédio moral</h3><p>Exposição recorrente a situações humilhantes ou constrangedoras em relações de trabalho ou estudo.</p></article>
+        <article class="info-card"><span>06</span><h3>Social</h3><p>Exclusão, intimidação, preconceito ou tentativa sistemática de afastar alguém de sua rede de apoio.</p></article>
+      </div>
+    </section>
+
+    <section id="frases" class="section dark">
+      <div class="section-head">
+        <p class="eyebrow">03 · NO COTIDIANO</p>
+        <h2>“Foi só uma brincadeira.”</h2>
+        <p>Algumas frases são usadas para minimizar comportamentos que podem causar sofrimento ou reforçar relações de controle.</p>
+      </div>
+      <div class="phrase-grid">
+        <button class="phrase" data-text="Dependendo do contexto, dizer que alguém é 'sensível demais' pode invalidar seus sentimentos e dificultar que ela reconheça uma situação de abuso.">“Você é sensível demais.”</button>
+        <button class="phrase" data-text="Preocupação não deve ser confundida com controle. Exigir acesso constante a localização, senhas ou contatos pode ser um sinal de comportamento controlador.">“Se você não tem nada a esconder, me passa sua senha.”</button>
+        <button class="phrase" data-text="Chantagem emocional pode pressionar alguém a fazer algo contra a própria vontade, usando culpa, ameaça de abandono ou sofrimento como instrumento.">“Se você me amasse, faria isso.”</button>
+        <button class="phrase" data-text="Uma 'brincadeira' deixa de ser inofensiva quando humilha, intimida, expõe ou continua apesar de a pessoa demonstrar desconforto.">“Foi só uma brincadeira.”</button>
+      </div>
+      <div id="phraseExplain" class="phrase-explain">Clique em uma frase para descobrir por que ela merece atenção.</div>
+    </section>
+
+    <section id="pesquisa" class="section">
+      <div class="section-head">
+        <p class="eyebrow">04 · SUA VOZ</p>
+        <h2>Pesquisa de percepção</h2>
+        <p>Esta área pode ser usada pelo grupo para coletar respostas reais da turma. Os resultados abaixo são demonstrativos.</p>
+      </div>
+      <div class="survey">
+        <label>Você saberia identificar violência psicológica?
+          <select id="survey1"><option>Sim</option><option>Talvez</option><option>Não</option></select>
+        </label>
+        <label>Você já presenciou uma situação de violência que não envolvia agressão física?
+          <select id="survey2"><option>Sim</option><option>Não</option><option>Não tenho certeza</option></select>
+        </label>
+        <label>Controle excessivo em um relacionamento pode ser uma forma de violência?
+          <select id="survey3"><option>Sim</option><option>Não</option><option>Depende da situação</option></select>
+        </label>
+        <button id="saveSurvey" class="btn primary">Registrar resposta</button>
+        <p id="surveyMessage" class="small"></p>
+      </div>
+      <div class="stats">
+        <div><strong id="responses">0</strong><span>respostas nesta sessão</span></div>
+        <div><strong id="yesRate">—</strong><span>responderam “sim” à 1ª pergunta</span></div>
+      </div>
+    </section>
+
+    <section id="ajuda" class="section help">
+      <div>
+        <p class="eyebrow">05 · E SE ACONTECER?</p>
+        <h2>Reconhecer é um primeiro passo.</h2>
+        <p>Se você ou alguém próximo estiver vivendo uma situação de violência, procure uma pessoa de confiança e serviços oficiais de apoio. Em uma situação de emergência, procure imediatamente os serviços de emergência da sua região.</p>
+      </div>
+      <div class="help-box">
+        <h3>Importante</h3>
+        <p>Este site tem finalidade educativa e não substitui orientação profissional, jurídica ou atendimento especializado.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>VI.</strong> Violências Invisíveis</div>
+    <p>Projeto acadêmico · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
