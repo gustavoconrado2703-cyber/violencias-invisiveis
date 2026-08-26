@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#18131a">
+<meta name="description" content="Violências Invisíveis — uma experiência jovem de conscientização sobre sinais de controle, humilhação, manipulação e outras formas de violência.">
+<title>Violências Invisíveis | Se Liga Moçada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="nav">
+  <a class="brand" href="#inicio"><span>VI</span><b>.</b></a>
+  <nav id="navLinks">
+    <a href="#experiencia">Experiência</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#masculinidades">Masculinidades</a>
+    <a href="#pesquisa">Pesquisa</a>
+    <a href="#agir">Agir</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-text reveal">
+    <p class="kicker">SE LIGA MOÇADA · PROTAGONISMO JUVENIL</p>
+    <h1>Você consegue enxergar o que <em>não deixa marca?</em></h1>
+    <p class="hero-lead">Uma experiência criada por jovens para jovens. Porque violência nem sempre começa com uma agressão — às vezes começa com algo que a gente aprendeu a chamar de “normal”.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#experiencia">Viver a experiência <span>↓</span></a>
+      <a class="btn btn-ghost" href="#manifesto">Por que isso importa?</a>
+    </div>
+  </div>
+  <div class="hero-art reveal">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="eye"><span></span></div>
+    <div class="hero-note"><small>OLHE DE NOVO</small><strong>Nem tudo que machuca<br>pode ser visto.</strong></div>
+  </div>
+</section>
+
+<section id="manifesto" class="manifesto">
+  <div class="manifesto-inner">
+    <p class="kicker">O INVISÍVEL</p>
+    <h2>Quando o controle vira “cuidado”.<br>Quando o ciúme vira “amor”.<br>Quando a humilhação vira “brincadeira”.</h2>
+    <p>É aí que a normalização pode esconder sinais importantes. O objetivo aqui não é apontar culpados: é ampliar o olhar, fortalecer relações baseadas em respeito e incentivar atitudes de prevenção.</p>
+  </div>
+</section>
+
+<section id="experiencia" class="section experience">
+  <div class="section-title">
+    <div><p class="kicker">01 · TESTE DE PERCEPÇÃO</p><h2>Você reconheceria?</h2></div>
+    <p>Não existe “nota perfeita”. A proposta é perceber como pequenas situações podem mudar de significado quando existe pressão, medo ou controle.</p>
+  </div>
+  <div class="scenario-card">
+    <div class="scenario-top"><span id="scenarioNum">01 / 06</span><span id="scenarioTag">SITUAÇÃO</span></div>
+    <div class="scenario-body">
+      <p class="scenario-label">Leia antes de responder.</p>
+      <h3 id="scenarioText"></h3>
+      <div id="scenarioOptions" class="options"></div>
+      <div id="scenarioFeedback" class="scenario-feedback hidden"></div>
+      <button id="scenarioNext" class="btn btn-primary hidden">Continuar →</button>
+    </div>
+    <div class="scenario-progress"><span id="scenarioBar"></span></div>
+  </div>
+  <div id="scenarioResult" class="scenario-result hidden"></div>
+</section>
+
+<section id="mapa" class="section map-section">
+  <div class="section-title">
+    <div><p class="kicker">02 · MAPA DO INVISÍVEL</p><h2>Dê nome ao que acontece.</h2></div>
+    <p>Violências podem assumir diferentes formas. Clique nos pontos para descobrir sinais e exemplos.</p>
+  </div>
+  <div class="map-grid">
+    <button class="map-card big" data-map="psico"><span>01</span><h3>Psicológica</h3><p>Medo, humilhação, manipulação, ameaça, desvalorização.</p></button>
+    <button class="map-card" data-map="digital"><span>02</span><h3>Digital</h3><p>Perseguição, exposição e invasão de privacidade.</p></button>
+    <button class="map-card" data-map="moral"><span>03</span><h3>Moral</h3><p>Ofensas, difamação e ataques à reputação.</p></button>
+    <button class="map-card" data-map="patrimonial"><span>04</span><h3>Patrimonial</h3><p>Controle ou retenção de dinheiro, bens e documentos.</p></button>
+    <button class="map-card" data-map="social"><span>05</span><h3>Isolamento</h3><p>Tentativas de afastar a pessoa de amigos e rede de apoio.</p></button>
+    <button class="map-card" data-map="assedio"><span>06</span><h3>Assédio</h3><p>Constrangimentos e humilhações recorrentes em relações de trabalho ou estudo.</p></button>
+  </div>
+  <div id="mapExplain" class="map-explain">Escolha um cartão para abrir uma explicação.</div>
+</section>
+
+<section id="masculinidades" class="section dark-section">
+  <div class="section-title">
+    <div><p class="kicker">03 · REFLEXÃO</p><h2>Que tipo de homem<br>estamos aprendendo a ser?</h2></div>
+    <p>Prevenir violência também passa por questionar ideias sobre poder, ciúme, controle e masculinidade que podem ser ensinadas como se fossem naturais.</p>
+  </div>
+  <div class="beliefs">
+    <button data-belief="Sentir não diminui ninguém. Reconhecer emoções pode ajudar a construir relações mais honestas e respeitosas.">“Homem de verdade não chora.”</button>
+    <button data-belief="Ciúme não é prova de amor. Uma relação saudável preserva autonomia, confiança e limites.">“Se tem ciúme, é porque ama.”</button>
+    <button data-belief="Estar em uma relação não dá a ninguém o direito de mandar na outra pessoa.">“Se é minha namorada, eu tenho que saber onde ela está.”</button>
+    <button data-belief="Respeito não é passividade. Colocar limites e conversar sobre conflitos é parte de uma relação saudável.">“Homem precisa impor respeito.”</button>
+  </div>
+  <div id="beliefExplain" class="belief-explain">Clique em uma frase. Vamos virar a lente.</div>
+</section>
+
+<section id="frases" class="section phrase-section">
+  <div class="section-title">
+    <div><p class="kicker">04 · VIRANDO A LENTE</p><h2>“Foi só uma brincadeira.”</h2></div>
+    <p>Uma brincadeira não deixa de ser prejudicial só porque recebeu esse nome. Contexto, repetição, consentimento e impacto importam.</p>
+  </div>
+  <div class="phrase-grid">
+    <button class="phrase" data-answer="Quando alguém demonstra desconforto e a outra pessoa continua, o rótulo de “brincadeira” não apaga o impacto.">“Você é sensível demais.”</button>
+    <button class="phrase" data-answer="Preocupação não significa acesso obrigatório. Senhas, localização e privacidade também existem dentro de relacionamentos.">“Se não esconde nada, me passa sua senha.”</button>
+    <button class="phrase" data-answer="Usar culpa ou ameaça de abandono para conseguir algo pode ser uma forma de pressão emocional.">“Se você me amasse, faria isso.”</button>
+    <button class="phrase" data-answer="A exposição pública pode humilhar e intimidar. O fato de outras pessoas rirem não torna a situação saudável.">“Foi só para os meus amigos rirem.”</button>
+  </div>
+  <div id="phraseAnswer" class="phrase-answer">Clique em uma frase para revelar o que pode estar por trás dela.</div>
+</section>
+
+<section id="pesquisa" class="section survey-section">
+  <div class="section-title">
+    <div><p class="kicker">05 · A VOZ DOS JOVENS</p><h2>O que a nossa geração pensa?</h2></div>
+    <p>Use esta pesquisa durante a ação. As respostas desta versão ficam apenas nesta sessão; para coleta real, conecte o formulário a uma ferramenta como Google Forms.</p>
+  </div>
+  <div class="survey-layout">
+    <form id="surveyForm" class="survey-form">
+      <label>1. Você saberia identificar violência psicológica?
+        <select name="q1"><option>Sim</option><option>Talvez</option><option>Não</option></select>
+      </label>
+      <label>2. Ciúme pode ser usado para controlar alguém?
+        <select name="q2"><option>Sim</option><option>Não</option><option>Depende</option></select>
+      </label>
+      <label>3. Uma “brincadeira” pode ultrapassar um limite?
+        <select name="q3"><option>Sim</option><option>Não</option><option>Não tenho certeza</option></select>
+      </label>
+      <label>4. Você saberia como apoiar um amigo que relatasse uma situação de violência?
+        <select name="q4"><option>Sim</option><option>Talvez</option><option>Não</option></select>
+      </label>
+      <button class="btn btn-primary" type="submit">Registrar minha voz →</button>
+      <p id="surveyMsg" class="form-msg"></p>
+    </form>
+    <div class="live-box">
+      <span class="live-dot"></span><small>RESULTADOS NESTA SESSÃO</small>
+      <div class="big-number" id="sessionResponses">0</div>
+      <p>participações</p>
+      <div class="mini-stat"><span>Identificam violência psicológica</span><strong id="yesPsych">—</strong></div>
+      <div class="mini-stat"><span>Veem limite em “brincadeiras”</span><strong id="yesJoke">—</strong></div>
+    </div>
+  </div>
+<div class="qr"><img src="data:image/png;base64,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" alt="QR Code para participar da pesquisa"><b>APONTE A CÂMERA</b><small>e participe da pesquisa</small></div></section>
+
+<section id="agir" class="section action-section">
+  <div class="action-main">
+    <p class="kicker">06 · PROTAGONISMO</p>
+    <h2>Agora que você percebeu,<br><em>o que você faz?</em></h2>
+    <div class="action-cards">
+      <div><span>01</span><h3>RECONHECER</h3><p>Não normalize sinais que geram medo, humilhação ou controle.</p></div>
+      <div><span>02</span><h3>ESCUTAR</h3><p>Se alguém confiar em você, acolha sem culpar a pessoa pela violência.</p></div>
+      <div><span>03</span><h3>BUSCAR APOIO</h3><p>Procure pessoas e serviços de confiança. Em emergência, busque ajuda imediata.</p></div>
+    </div>
+  </div>
+  <div class="final-message">
+    <p>“A mudança não começa quando a violência aparece.</p>
+    <strong>Começa quando a gente para de chamá-la de normal.”</strong>
+  </div>
+</section>
+
+<section class="authors">
+  <p class="kicker">CRIADO POR JOVENS</p>
+  <h2>Gustavo Conrado · Ray Wemeson · Railson · David</h2>
+  <p>Projeto <strong>Violências Invisíveis</strong> · Se Liga Moçada</p>
+</section>
+</main>
+
+<footer>
+  <div><strong>VI.</strong> Violências Invisíveis</div>
+  <div>Se Liga Moçada · 2026</div>
+  <div>Projeto de conscientização e protagonismo juvenil</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
