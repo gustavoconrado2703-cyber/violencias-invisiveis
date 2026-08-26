@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#18131a">
+<meta name="description" content="Violências Invisíveis — uma experiência jovem de conscientização sobre sinais de controle, humilhação, manipulação e outras formas de violência.">
+<title>Violências Invisíveis | Se Liga Moçada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="nav">
+  <a class="brand" href="#inicio"><span>VI</span><b>.</b></a>
+  <nav id="navLinks">
+    <a href="#experiencia">Experiência</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#masculinidades">Masculinidades</a>
+    <a href="#pesquisa">Pesquisa</a>
+    <a href="#agir">Agir</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-text reveal">
+    <p class="kicker">SE LIGA MOÇADA · PROTAGONISMO JUVENIL</p>
+    <h1>Você consegue enxergar o que <em>não deixa marca?</em></h1>
+    <p class="hero-lead">Uma experiência criada por jovens para jovens. Porque violência nem sempre começa com uma agressão — às vezes começa com algo que a gente aprendeu a chamar de “normal”.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#experiencia">Viver a experiência <span>↓</span></a>
+      <a class="btn btn-ghost" href="#manifesto">Por que isso importa?</a>
+    </div>
+  </div>
+  <div class="hero-art reveal">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="eye"><span></span></div>
+    <div class="hero-note"><small>OLHE DE NOVO</small><strong>Nem tudo que machuca<br>pode ser visto.</strong></div>
+  </div>
+</section>
+
+<section id="manifesto" class="manifesto">
+  <div class="manifesto-inner">
+    <p class="kicker">O INVISÍVEL</p>
+    <h2>Quando o controle vira “cuidado”.<br>Quando o ciúme vira “amor”.<br>Quando a humilhação vira “brincadeira”.</h2>
+    <p>É aí que a normalização pode esconder sinais importantes. O objetivo aqui não é apontar culpados: é ampliar o olhar, fortalecer relações baseadas em respeito e incentivar atitudes de prevenção.</p>
+  </div>
+</section>
+
+<section id="experiencia" class="section experience">
+  <div class="section-title">
+    <div><p class="kicker">01 · TESTE DE PERCEPÇÃO</p><h2>Você reconheceria?</h2></div>
+    <p>Não existe “nota perfeita”. A proposta é perceber como pequenas situações podem mudar de significado quando existe pressão, medo ou controle.</p>
+  </div>
+  <div class="scenario-card">
+    <div class="scenario-top"><span id="scenarioNum">01 / 06</span><span id="scenarioTag">SITUAÇÃO</span></div>
+    <div class="scenario-body">
+      <p class="scenario-label">Leia antes de responder.</p>
+      <h3 id="scenarioText"></h3>
+      <div id="scenarioOptions" class="options"></div>
+      <div id="scenarioFeedback" class="scenario-feedback hidden"></div>
+      <button id="scenarioNext" class="btn btn-primary hidden">Continuar →</button>
+    </div>
+    <div class="scenario-progress"><span id="scenarioBar"></span></div>
+  </div>
+  <div id="scenarioResult" class="scenario-result hidden"></div>
+</section>
+
+<section id="mapa" class="section map-section">
+  <div class="section-title">
+    <div><p class="kicker">02 · MAPA DO INVISÍVEL</p><h2>Dê nome ao que acontece.</h2></div>
+    <p>Violências podem assumir diferentes formas. Clique nos pontos para descobrir sinais e exemplos.</p>
+  </div>
+  <div class="map-grid">
+    <button class="map-card big" data-map="psico"><span>01</span><h3>Psicológica</h3><p>Medo, humilhação, manipulação, ameaça, desvalorização.</p></button>
+    <button class="map-card" data-map="digital"><span>02</span><h3>Digital</h3><p>Perseguição, exposição e invasão de privacidade.</p></button>
+    <button class="map-card" data-map="moral"><span>03</span><h3>Moral</h3><p>Ofensas, difamação e ataques à reputação.</p></button>
+    <button class="map-card" data-map="patrimonial"><span>04</span><h3>Patrimonial</h3><p>Controle ou retenção de dinheiro, bens e documentos.</p></button>
+    <button class="map-card" data-map="social"><span>05</span><h3>Isolamento</h3><p>Tentativas de afastar a pessoa de amigos e rede de apoio.</p></button>
+    <button class="map-card" data-map="assedio"><span>06</span><h3>Assédio</h3><p>Constrangimentos e humilhações recorrentes em relações de trabalho ou estudo.</p></button>
+  </div>
+  <div id="mapExplain" class="map-explain">Escolha um cartão para abrir uma explicação.</div>
+</section>
+
+<section id="masculinidades" class="section dark-section">
+  <div class="section-title">
+    <div><p class="kicker">03 · REFLEXÃO</p><h2>Que tipo de homem<br>estamos aprendendo a ser?</h2></div>
+    <p>Prevenir violência também passa por questionar ideias sobre poder, ciúme, controle e masculinidade que podem ser ensinadas como se fossem naturais.</p>
+  </div>
+  <div class="beliefs">
+    <button data-belief="Sentir não diminui ninguém. Reconhecer emoções pode ajudar a construir relações mais honestas e respeitosas.">“Homem de verdade não chora.”</button>
+    <button data-belief="Ciúme não é prova de amor. Uma relação saudável preserva autonomia, confiança e limites.">“Se tem ciúme, é porque ama.”</button>
+    <button data-belief="Estar em uma relação não dá a ninguém o direito de mandar na outra pessoa.">“Se é minha namorada, eu tenho que saber onde ela está.”</button>
+    <button data-belief="Respeito não é passividade. Colocar limites e conversar sobre conflitos é parte de uma relação saudável.">“Homem precisa impor respeito.”</button>
+  </div>
+  <div id="beliefExplain" class="belief-explain">Clique em uma frase. Vamos virar a lente.</div>
+</section>
+
+<section id="frases" class="section phrase-section">
+  <div class="section-title">
+    <div><p class="kicker">04 · VIRANDO A LENTE</p><h2>“Foi só uma brincadeira.”</h2></div>
+    <p>Uma brincadeira não deixa de ser prejudicial só porque recebeu esse nome. Contexto, repetição, consentimento e impacto importam.</p>
+  </div>
+  <div class="phrase-grid">
+    <button class="phrase" data-answer="Quando alguém demonstra desconforto e a outra pessoa continua, o rótulo de “brincadeira” não apaga o impacto.">“Você é sensível demais.”</button>
+    <button class="phrase" data-answer="Preocupação não significa acesso obrigatório. Senhas, localização e privacidade também existem dentro de relacionamentos.">“Se não esconde nada, me passa sua senha.”</button>
+    <button class="phrase" data-answer="Usar culpa ou ameaça de abandono para conseguir algo pode ser uma forma de pressão emocional.">“Se você me amasse, faria isso.”</button>
+    <button class="phrase" data-answer="A exposição pública pode humilhar e intimidar. O fato de outras pessoas rirem não torna a situação saudável.">“Foi só para os meus amigos rirem.”</button>
+  </div>
+  <div id="phraseAnswer" class="phrase-answer">Clique em uma frase para revelar o que pode estar por trás dela.</div>
+</section>
+
+<section id="pesquisa" class="section survey-section">
+  <div class="section-title">
+    <div><p class="kicker">05 · A VOZ DOS JOVENS</p><h2>O que a nossa geração pensa?</h2></div>
+    <p>Use esta pesquisa durante a ação. As respostas desta versão ficam apenas nesta sessão; para coleta real, conecte o formulário a uma ferramenta como Google Forms.</p>
+  </div>
+  <div class="survey-layout">
+    <form id="surveyForm" class="survey-form">
+      <label>1. Você saberia identificar violência psicológica?
+        <select name="q1"><option>Sim</option><option>Talvez</option><option>Não</option></select>
+      </label>
+      <label>2. Ciúme pode ser usado para controlar alguém?
+        <select name="q2"><option>Sim</option><option>Não</option><option>Depende</option></select>
+      </label>
+      <label>3. Uma “brincadeira” pode ultrapassar um limite?
+        <select name="q3"><option>Sim</option><option>Não</option><option>Não tenho certeza</option></select>
+      </label>
+      <label>4. Você saberia como apoiar um amigo que relatasse uma situação de violência?
+        <select name="q4"><option>Sim</option><option>Talvez</option><option>Não</option></select>
+      </label>
+      <button class="btn btn-primary" type="submit">Registrar minha voz →</button>
+      <p id="surveyMsg" class="form-msg"></p>
+    </form>
+    <div class="live-box">
+      <span class="live-dot"></span><small>PARTICIPE DA PESQUISA</small>
+      <div class="qr-panel">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwwAAAMMAQAAAADWBB3WAAAGzklEQVR4nO2dW47kNgxFr4L5V+2g97+s2YG8AuZDD5JyTRLAnq6JcYhGwQ9ZB+2PC5Ki6GL6zXb89bsJEggQIECAAAECBAgQIECAAAECBIj/GaIse0lHGTePcaWU0k/7lfWIP/gaB/tU3/tfgAAB4nEImZmZqVo86NdVTdUkWdP4rT5AkqpZGzNYUz/eprL2jBcFAgSIDyOW51Ne6tLkDpVkZsPFOkof0IVrjD9KeWk6TgpOlJ73okCAAPGNiB/vLx/Fjpcdr35WJM1jmwP2X2mNz/aMFwUCBIg/BWE/y/CjZijXj/vdnmpawd265QHgf0DcbSBAgHgqwv2oJDHHkKnSvaPa+oBSm5ZbNXSs9TFFrmNZrZ7xokCAAPFRxFF8Ye5rpMp73ql8jeOYrRoXv6ZzFR8JU333fwECBIinIYYfFT0fO4qFvJOtK0cZI/tB+NU2INkzXhQIECA+gpiVA2ajtGDVGKySA7OVnvKnmuIV26xpVSBQewACBIgr5qoyTyWtVLknxhVlR+svCpfP2bySCo0CAQLEBRuxXtHIfpcerFUrtW3qY5oVCMGtmhFfv9588EE+CgQIEDfYqgmPgZ6HcrOuYEV8q8ZgVJI3KTpOTT4GPwoECBCX7byTZSuOWrLjMtWSCo1HViRo6RiNAgECxBVzjTrv2gsSlLSoaZOy6TLFNNSa+RkvCgQIEB9BzHxUtZ5rWlmknpgqs5agp6d6EUKpVo5iR5lpKCuzvLOXJZTafKffQ14UCBAgPoJIsV70o9xfmsHdtvwXQ781xh0q4UeBAAHiBguJI0me+k6dWH6RoYrVCOtZ3+VX0SgQIEBctT0f1bxoc/lXafEu1nYqV0lti4BoFAgQIC7bcqMU+9qtnHmTFDLhKyqc6hT9qDf+GBoFAgSImxDWVErxwvKe/X65H+Ut7L68RGE0Cv4yMxvt78KEG+K3GQgQIJ6KmKFZbBrc5vXYPConz8/VCB76UR8FAgSI+yxK09KlvQJqxYPVQ0Jf42vzN2wxlljXAwECxA0WxWddUUyGV7PsI8XvMqSk+jYV+SgQIEBcthXrjdOW3aE6y8hjAwRpc7HWxfPXYdAoECBAXDFfjMvtoc7rd4obilvudq6TQDX8KBAgQNxgIbntm++kt2qz97vbc+y5QB0/CgQIENct5syHhVJzX8hTcpnSr8uRzxCk7xkvCgQIEB9BhBrOkAxXKCZPYWDMlp9S69sMxHogQIC4C9GrN7U+Ulytl2WOmsyjLKUa34WZX9kbn4bp3TjXDPJ01sNeFAgQIL4XkWO9mr0jpbxTP/W4L/e7W+PXbMR6IECAuG5v1vVCiinWIXgQJ89ZxbKELcoj1gMBAsR1Wxrlno+laiib22E2IUpbZmKhwlI8NAoECBCXLflRMel96l8XV+48JIzbXvKeGjQKBAgQ1y2u0CWBii2k8lretqF4zNPyp2HIR4EAAeIO87xTtaQz51oC6XwlxokKQocfBQIEiFvMom1t66qdTxVdrxgn6uSGoVEgQIC4bO5HbRUFMW0ePCUfdq7YbClyJNYDAQLEdfMsU+6+klJSFjLh8gPPq1fbRCz4Zs94USBAgPgIYv+WurZygpoCQGlPPaUtxi2JFRoFAgSI67Y0KvU3aKcYcHU5sKRCUmxxEFwsNAoECBB3WEqANyVRaknB4l/ubJA6TUnUmYMAAeI283xU7rKyJCsGerEPXtoyk32qdBeNAgECxHVENftZNL9FpdW+4GcpL5Uy2xr0/gZrH99RSik6iqrpKF3WSilJyh72okCAAPGtiL2Gc0VtcVFPCqfRrdLeCcGzVe6SPeNFgQAB4iOIU5vNUB+lsFS3bg2rqaRq065cC/qMFwUCBIiPIPb1Oz9u3t58y1ClB7vNJHnUMTQKBAgQ122L9d4UOFloVK7UzDyt9MVbYWsMGgUCBIgrdnaHlr803Kfm6anzhpfNg4phI34UCBAgrptlS8Fay7uDLd1KLe9CVxY/RaNAgABx2exkvwjZQmOWmiJBn6qF+ij8KBAgQNxhm86kmG6rG9dpOa+FWqnYDyHlsp7xokCAAPERRNjtEg4U+7S8zT6l7is54jMj1gMBAsRd9ja+S/rT5rAWHqspzb5fpH8UCBAgbrJ/1qg0RinWWxVTqWhqVm/iR4EAAeIWO2vU8qCG1V98tart24q35njUR4EAAeKy/VhHcRuwjpck1eZ3+xXJjlep1gfY0TcUtzWD9U3HRwlzPeNFgQAB4iOIN+t6e5lTCx5UdKVCwXmsUV9zEuuBAAHishX79zHX7HjGiwIBAgQIECBAgAABAgQIECBAgABxi/0NwMYOwJjjxQQAAAAASUVORK5CYII=" alt="QR Code para responder à pesquisa">
+        <strong>Aponte a câmera do celular</strong>
+        <p>Responda à pesquisa oficial do projeto Violências Invisíveis.</p>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScoHvXzgW4V3jJX2c6q5lIAqfG9BebLJxePvi_oxbw4DDx9Tg/viewform?usp=publish-editor" target="_blank" rel="noopener">Abrir formulário →</a>
+      </div>
+      <div class="session-results">
+        <small>RESULTADOS NESTA SESSÃO</small>
+      <div class="big-number" id="sessionResponses">0</div>
+      <p>participações</p>
+      <div class="mini-stat"><span>Identificam violência psicológica</span><strong id="yesPsych">—</strong></div>
+      <div class="mini-stat"><span>Veem limite em “brincadeiras”</span><strong id="yesJoke">—</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agir" class="section action-section">
+  <div class="action-main">
+    <p class="kicker">06 · PROTAGONISMO</p>
+    <h2>Agora que você percebeu,<br><em>o que você faz?</em></h2>
+    <div class="action-cards">
+      <div><span>01</span><h3>RECONHECER</h3><p>Não normalize sinais que geram medo, humilhação ou controle.</p></div>
+      <div><span>02</span><h3>ESCUTAR</h3><p>Se alguém confiar em você, acolha sem culpar a pessoa pela violência.</p></div>
+      <div><span>03</span><h3>BUSCAR APOIO</h3><p>Procure pessoas e serviços de confiança. Em emergência, busque ajuda imediata.</p></div>
+    </div>
+  </div>
+  <div class="final-message">
+    <p>“A mudança não começa quando a violência aparece.</p>
+    <strong>Começa quando a gente para de chamá-la de normal.”</strong>
+  </div>
+</section>
+
+<section class="authors">
+  <p class="kicker">CRIADO POR JOVENS</p>
+  <h2>Gustavo Conrado · Ray Wemeson · Railson · David</h2>
+  <p>Projeto <strong>Violências Invisíveis</strong> · Se Liga Moçada</p>
+</section>
+</main>
+
+<footer>
+  <div><strong>VI.</strong> Violências Invisíveis</div>
+  <div>Se Liga Moçada · 2026</div>
+  <div>Projeto de conscientização e protagonismo juvenil</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
